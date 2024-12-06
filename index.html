@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Library Account Registration</h1>
+    </nav>
+    <form>
+      <!-- div1 -->
+      <div class="left-section">
+        <div class="primary-info form-div">
+          <h3 class="form-title">Primary Info</h3>
+          <label for="">Name</label>
+          <input name="name" type="text" required />
+          <label for="">Birthday</label>
+          <input name="birthday" type="date" required />
+          <div class="gender-group">
+            <input name="gender" type="radio" value="male" required />
+            <label for="male">Male</label>
+            <input name="gender" type="radio" value="female" required />
+            <label for="female">Female</label>
+            <input name="gender" type="radio" value="others" required />
+            <label for="others">Others</label>
+            <input name="gender" type="radio" value="not-specified" required />
+            <label for="not-specified">Not Specified</label>
+          </div>
+          <label for="">Address</label>
+          <input name="address" type="text" required />
+        </div>
+        <!-- div2 -->
+        <div class="contact-info form-div">
+          <h3 class="form-title">Contact Information</h3>
+          <label for="">Primary Phone</label>
+          <input name="primary-phone" type="number" required />
+          <label for="">Secondary Phone</label>
+          <input name="secondary-phone" type="number" required />
+          <label for="">Other Phone</label>
+          <input name="other-phone" type="number" required />
+          <label for="">Primary Email</label>
+          <input name="primary-email" type="email" required />
+          <label for="">Secondary Email</label>
+          <input name="secondary-email" type="email" required />
+          <label for="primary-contact">Primary Contact Method</label>
+          <select name="primary-contact" id="">
+            <option value="primary-phone">Primary Phone</option>
+            <option value="secondary-phone">Secondary Phone</option>
+            <option value="other-phone">Other Phone</option>
+            <option value="primary-email">Primary Email</option>
+            <option value="secondary-email">Secondary Email</option>
+          </select>
+        </div>
+      </div>
+      <!-- div3 -->
+      <div class="right-section">
+        <div class="account-info form-div">
+          <h3 class="form-title">Account Information</h3>
+          <label for="">Card Number</label>
+          <input name="card-number" type="number" maxlength="9" required />
+          <label for="">Course</label>
+          <input name="course" type="text" required />
+          <label for="">College</label>
+          <input name="college" type="text" required />
+          <label for="">Registration Date</label>
+          <input name="registration-date" type="date" required />
+          <label for="">Date Expiry</label>
+          <input name="date-expiry" type="date" required />
+        </div>
+        <button class="submit-btn">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
